@@ -23,7 +23,7 @@
   </style>
 </head>
 <body>
-  <div id="funct-lwl"></div>
+  <div id="inflect-lwl"></div>
 </body>
 
 <script>
@@ -40,14 +40,14 @@ var trial_order = jsPsych.data.getURLVariable('order')
 // use the publish link NOT the sharing link
 
 if (trial_order == "1") {
-	var publicSpreadsheetUrl = 'https://hjweaver4.github.io/funct/orders/functOrder1.csv'
+	var publicSpreadsheetUrl = 'https://hjweaver4.github.io/inflect/orders/Infant_AAE_Order_1.csv'
 } else if (trial_order =="2") {
-	var publicSpreadsheetUrl = 'https://hjweaver4.github.io/funct/orders/functOrder2.csv'
-} else if (trial_order =="3") {
-  var publicSpreadsheetUrl = 'https://hjweaver4.github.io/funct/orders/functOrder3.csv'
-} else if (trial_order =="4") {
-  var publicSpreadsheetUrl = 'https://hjweaver4.github.io/funct/orders/functOrder4.csv'
-}
+	var publicSpreadsheetUrl = 'https://hjweaver4.github.io/inflect/orders/Infant_AAE_Order_2.csv'
+} //else if (trial_order =="3") {
+  //var publicSpreadsheetUrl = 'https://hjweaver4.github.io/funct/orders/functOrder3.csv'
+//} else if (trial_order =="4") {
+  //var publicSpreadsheetUrl = 'https://hjweaver4.github.io/funct/orders/functOrder4.csv'
+//}
 
 //lwl orders
 Papa.parse(publicSpreadsheetUrl,{
@@ -204,28 +204,28 @@ var imageExt = 'stimuli/images/'
 
 
 var images = [
-"apple01.jpg",
-"apple02.jpg",
-"apple03.jpg",
-"ball01.jpg",
-"ball02.jpg",
-"ball03.jpg",
+"bunny01.jpg",
+"bunny02.jpg",
+"bunny03.jpg",
+"cow01.jpg",
+"cow02.jpg",
+"cow03.jpg",
 "balloons_left.jpg",
 "balloons_right.jpg",
 "beach_left.jpg",
 "beach_right.jpg",
 "black-background.jpg",
 "black.jpg",
-"crayon01.jpg",
-"crayon02.jpg",
-"crayon03.jpg",
+"duck01.jpg",
+"duck02.jpg",
+"duck03.jpg",
 "fireworks_left.jpg",
 "fireworks_right.jpg",
 "ocean_left.jpg",
 "ocean_right.jpg",
-"toothbrush01.jpg",
-"toothbrush02.jpg",
-"toothbrush03.jpg"
+"fish01.jpg",
+"fish02.jpg",
+"fish03.jpg"
 ]
 
 var preload_images=[];
@@ -242,25 +242,34 @@ var audio = [
   "acrossTheUniverse_55dB011.wav",
   "acrossTheUniverse_55dB016.wav",
   "acrossTheUniverse_55dB028.wav",
-  "yellow_55dB000.wav",
-  "yellow_55dB009.wav",
-  "yellow_55dB013.wav",
-  "yellow_55dB017.wav",
-  "yellow_55dB026.wav",
   "wow_cool_x4.wav",
   "check_out.wav",
-  "apple_find.wav",
-  "apple_look.wav",
-  "apple_where.wav",
-  "ball_find.wav",
-  "ball_look.wav",
-  "ball_where.wav",
-  "crayon_find.wav",
-  "crayon_look.wav",
-  "crayon_where.wav",
-  "toothbrush_find.wav",
-  "toothbrush_look.wav",
-  "toothbrush_where.wav"
+  "norm_sweet_sae_where_norm_cat_sae.wav",
+  "norm_game_aae_where_norm_dog_aae.wav",
+  "norm_cool_aae_see_norm_bunny_aae.wav",
+  "norm_cute_aae_see_norm_fish_aae.wav",
+  "norm_sweet_aae_where_norm_duck_aae.wav",
+  "norm_game_aae_where_norm_cow_aae.wav",
+  "norm_cute_sae_where_norm_fish_sae.wav",
+  "norm_cool_sae_see_norm_duck_sae.wav",
+  "norm_game_sae_see_norm_bunny_sae.wav",
+  "norm_sweet_sae_where_norm_cow_sae.wav",
+  "norm_cute_aae_where_norm_cow_aae.wav",
+  "norm_game_aae_where_norm_bunny_aae.wav",
+  "norm_cool_aae_see_norm_fish_aae.wav",
+  "norm_sweet_aae_see_norm_duck_aae.wav",
+  "norm_game_sae_norm_see_bunny_sae.wav",
+  "norm_sweet_sae_norm_where_fish_sae.wav",
+  "norm_cute_sae_norm_where_duck_sae.wav",
+  "norm_cool_sae_norm_see_cow_sae.wav",
+  "norm_cute_aae_norm_where_fish_aae.wav",
+  "norm_game_aae_norm_see_duck_aae.wav",
+  "norm_cool_aae_norm_see_cow_aae.wav",
+  "norm_sweet_aae_norm_where_bunny_aae.wav",
+  "norm_sweet_sae_norm_see_duck_sae.wav",
+  "norm_cute_sae_norm_where_bunny_sae.wav",
+  "norm_game_sae_norm_see_cow_sae.wav",
+  "norm_cool_sae_norm_where_fish_sae.wav"
 ];
 
 var preload_audio  = [];
@@ -272,14 +281,6 @@ for (var l = 0; l < preload_audio.length; l++) {
 var videoExt = 'stimuli/videos/'
 
 var video = [
-  "apple_typical.mp4",
-  "apple_atypical.mp4",
-  "ball_typical.mp4",
-  "ball_atypical.mp4",
-  "crayon_typical.mp4",
-  "crayon_atypical.mp4",
-  "toothbrush_typical.mp4",
-  "toothbrush_atypical.mp4",
   "Bubbles6.mp4",
   "Clouds6.mp4",
   "Drops6.mp4",
