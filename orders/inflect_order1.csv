@@ -23,7 +23,7 @@ block,trial_number,auditory_stimulus,left_image,right_image,target_label,left_vi
 4,22,norm_cool_sae_see_sae_norm_cow_sae,bunny02,cow01,cow,,,right,1,,black-background,LWL
 5,23,acrossTheUniverse_55dB016,balloons_left,balloons_right,AG,,,left,0,,black-background,LWL
 5,24,norm_cute_aae_where_aae_norm_fish_aae,bunny02,fish02,fish,,,right,1,,black-background,LWL
-5,25,norm_game_aae_see_aae_norm_duck_aae,duck01,buny02,duck,,,left,0,,black-background,LWL
+5,25,norm_game_aae_see_aae_norm_duck_aae,duck01,bunny02,duck,,,left,0,,black-background,LWL
 5,26,norm_cool_aae_see_aae_norm_cow_aae,duck01,cow01,cow,,,right,1,,black-background,LWL
 5,27,norm_sweet_aae_where_aae_norm_bunny_aae,bunny03,fish01,bunny,,,left,0,,black-background,LWL
 6,28,acrossTheUniverse_55dB028,fireworks_left,fireworks_right,AG,,,right,1,,black-background,LWL
