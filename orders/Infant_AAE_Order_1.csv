@@ -1,3 +1,0 @@
-block,trial_number,auditory_stimulus,left_image,right_image,target_label,left_video,right_video,target_side,correct_response,playing_side,background,trial_type
-1,1,norm_sweet_sae_where_sae_norm_cat_sae,cat01,dog01,cat,,,left,0,,black-background,LWL
-1,2,norm_game_aae_where_aae_norm_dog_aae,cat01,dog01,dog,,,right,1,,black-background,LWL
