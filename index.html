@@ -40,13 +40,9 @@ var trial_order = jsPsych.data.getURLVariable('order')
 // use the publish link NOT the sharing link
 
 if (trial_order == "1") {
-	var publicSpreadsheetUrl = 'https://hjweaver4.github.io/inflect/orders/inflect_order1.csv'
+	var publicSpreadsheetUrl = 'https://hjweaver4.github.io/inflect/orders/inflect_order1_p2.csv'
 } else if (trial_order =="2") {
-	var publicSpreadsheetUrl = 'https://hjweaver4.github.io/inflect/orders/inflect_order2.csv'
-} else if (trial_order =="3") {
-  var publicSpreadsheetUrl = 'https://hjweaver4.github.io/inflect/orders/functOrder3.csv'
-} else if (trial_order =="4") {
-  var publicSpreadsheetUrl = 'https://hjweaver4.github.io/inflect/orders/functOrder4.csv'
+	var publicSpreadsheetUrl = 'https://hjweaver4.github.io/inflect/orders/inflect_order2_p2.csv'
 }
 
 //lwl orders
@@ -204,28 +200,26 @@ var imageExt = 'stimuli/images/'
 
 
 var images = [
-"bunny01.jpg",
-"bunny02.jpg",
-"bunny03.jpg",
-"cow01.jpg",
-"cow02.jpg",
-"cow03.jpg",
+"cat01.jpg",
+"dog01.jpg",
 "balloons_left.jpg",
 "balloons_right.jpg",
 "beach_left.jpg",
 "beach_right.jpg",
 "black-background.jpg",
 "black.jpg",
-"duck01.jpg",
-"duck02.jpg",
-"duck03.jpg",
 "fireworks_left.jpg",
 "fireworks_right.jpg",
 "ocean_left.jpg",
 "ocean_right.jpg",
-"fish01.jpg",
-"fish02.jpg",
-"fish03.jpg"
+"bunny.jpg",
+"cow.jpg",
+"duck.jpg",
+"fish.jpg",
+"monkey.jpg",
+"lion.jpg",
+"horse.jpg",
+"pig.jpg"
 ]
 
 var preload_images=[];
@@ -238,38 +232,29 @@ for (var k = 0; k < images.length; k++) {
 var audio = [
   "acrossTheUniverse_55dB000.wav",
   "acrossTheUniverse_55dB004.wav",
-  "acrossTheUniverse_55dB008.wav",
   "acrossTheUniverse_55dB011.wav",
-  "acrossTheUniverse_55dB016.wav",
   "acrossTheUniverse_55dB028.wav",
   "wow_cool_x4.wav",
   "check_out.wav",
-  "norm_sweet_sae_where_sae_norm_cat_sae.wav",
-  "norm_game_aae_where_aae_norm_dog_aae.wav",
-  "norm_cool_aae_see_aae_norm_bunny_aae.wav",
-  "norm_cute_aae_see_aae_norm_fish_aae.wav",
-  "norm_sweet_aae_where_aae_norm_duck_aae.wav",
-  "norm_game_aae_where_aae_norm_cow_aae.wav",
-  "norm_cute_sae_where_sae_norm_fish_sae.wav",
-  "norm_cool_sae_see_sae_norm_duck_sae.wav",
-  "norm_game_sae_see_sae_norm_bunny_sae.wav",
-  "norm_sweet_sae_where_sae_norm_cow_sae.wav",
-  "norm_cute_aae_where_aae_norm_cow_aae.wav",
-  "norm_game_aae_where_aae_norm_bunny_aae.wav",
-  "norm_cool_aae_see_aae_norm_fish_aae.wav",
-  "norm_sweet_aae_see_aae_norm_duck_aae.wav",
-  "norm_game_sae_see_sae_norm_bunny_sae.wav",
-  "norm_sweet_sae_where_sae_norm_fish_sae.wav",
-  "norm_cute_sae_where_sae_norm_duck_sae.wav",
-  "norm_cool_sae_see_sae_norm_cow_sae.wav",
-  "norm_cute_aae_where_aae_norm_fish_aae.wav",
-  "norm_game_aae_see_aae_norm_duck_aae.wav",
-  "norm_cool_aae_see_aae_norm_cow_aae.wav",
-  "norm_sweet_aae_where_aae_norm_bunny_aae.wav",
-  "norm_sweet_sae_see_sae_norm_duck_sae.wav",
-  "norm_cute_sae_where_sae_norm_bunny_sae.wav",
-  "norm_game_sae_see_sae_norm_cow_sae.wav",
-  "norm_cool_sae_where_sae_norm_bunny_sae.wav"
+  "pinwheel_short.wav",
+  "sae_sweet_where_dog.wav",
+  "aae_game_see_cat.wav",
+  "aae_cool_where_monkey.wav",
+  "aae_cute_see_fish.wav",
+  "aae_game_where_lion.wav",
+  "aae_sweet_see_duck.wav",
+  "sae_cute_see_fish.wav",
+  "sae_cool_where_monkey.wav",
+  "sae_game_where_lion.wav",
+  "sae_sweet_see_duck.wav",
+  "aae_sweet_where_horse.wav",
+  "aae_game_see_pig.wav",
+  "aae_cool_see_bunny.wav",
+  "aae_cute_where_cow.wav",
+  "sae_game_see_pig.wav",
+  "sae_cute_where_cow.wav",
+  "sae_sweet_where_horse.wav",
+  "sae_cool_see_bunny.wav"
 ];
 
 var preload_audio  = [];
@@ -281,11 +266,7 @@ for (var l = 0; l < preload_audio.length; l++) {
 var videoExt = 'stimuli/videos/'
 
 var video = [
-  "Bubbles6.mp4",
-  "Clouds6.mp4",
-  "Drops6.mp4",
-  "Kaleidoscope6.mp4",
-  "Planets6.mp4"
+  "pinwheel_2s.mp4"
 ];
 
 var preload_vids=[];

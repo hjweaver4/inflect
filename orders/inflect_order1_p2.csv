@@ -1,4 +1,4 @@
-block,trial_number,auditory_stimulus,left_image,right_image,target_label,left_video,right_video,target_side,correct_response,playing_side,background,trial_type
+,trial_number,auditory_stimulus,left_image,right_image,target_label,left_video,right_video,target_side,correct_response,playing_side,background,trial_type
 1,1,pinwheel_short,,,,,pinwheel_2s,right,1,right,black-background,LWL
 1,2,pinwheel_short,,,,pinwheel_2s,,left,0,left,black-background,LWL
 1,3,sae_sweet_where_dog,cat01,dog01,dog,,,right,1,,black-background,LWL
